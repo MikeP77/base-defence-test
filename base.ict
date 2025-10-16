@@ -10,7 +10,7 @@ libs:
   keyboard: {}
   keyboard.polyfill: {}
   pointer.polyfill: {}
-startroom: -1
+startroom: 8dKcPMPMMHFJdg
 contentTypes: []
 actions: []
 scripts: []
@@ -283,9 +283,9 @@ assets:
     uid: qkTLnghnhqJ6mn
     behaviors: []
     extendTypes: ''
-  - lastmod: 1760624864824
+  - lastmod: 1760624694597
     type: texture
-    name: Back_02
+    name: Placeholder2
     untill: 0
     grid:
       - 1
@@ -295,29 +295,26 @@ assets:
       - 0
     marginx: 0
     marginy: 0
-    imgWidth: 256
-    imgHeight: 336
-    width: 256
-    height: 336
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
     offx: 0
     offy: 0
-    origname: icT6K876jD4KcKd.png
+    origname: ibwW3LhL47cFkG7.png
     shape: rect
     left: 0
-    right: 256
+    right: 64
     top: 0
-    bottom: 336
-    uid: cT6K876jD4KcKd
+    bottom: 64
+    uid: bwW3LhL47cFkG7
     padding: 1
     isBlank: false
-    source: >-
-      D:\Programy\ct.js.v5.2.1.for.win64\package.nw\bundledAssets\textures\Hack
-      Deck\Back_02.png
   - type: template
     baseClass: AnimatedSprite
-    name: Back_02
+    name: Placeholder2
     depth: 0
-    texture: cT6K876jD4KcKd
+    texture: bwW3LhL47cFkG7
     playAnimationOnStart: false
     loopAnimation: true
     animationFPS: 30
@@ -327,14 +324,13 @@ assets:
         lib: core
         code: |-
           this.move();
-          this.move();
-          this.move();
-          this.move();
+
+          console.log("placeholder2")
         arguments: {}
     extends:
       cgroup: ''
-    lastmod: 1760624876005
-    uid: JMkQTzhpprNKnn
+    lastmod: 1760624710832
+    uid: tgwJ8mHRJNN1JC
     behaviors: []
     extendTypes: ''
   - type: room
@@ -360,25 +356,25 @@ assets:
     follow: -1
     backgrounds: []
     copies:
-      - x: 448
-        'y': 384
+      - x: 384
+        'y': 256
         opacity: 1
         tint: 16777215
         scale:
           x: 1
           'y': 1
         rotation: 0
-        uid: JMkQTzhpprNKnn
+        uid: tgwJ8mHRJNN1JC
         exts: {}
         customProperties: {}
         bindings: {}
     tiles: []
     extends: {}
-    lastmod: 1760624899569
+    lastmod: 1760624729572
     events: []
     behaviors: []
     extendTypes: ''
-    uid: WDNjNCqM1248HW
+    uid: 8dKcPMPMMHFJdg
 globalVars: []
 settings:
   authoring:
