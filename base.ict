@@ -283,6 +283,102 @@ assets:
     uid: qkTLnghnhqJ6mn
     behaviors: []
     extendTypes: ''
+  - lastmod: 1760624864824
+    type: texture
+    name: Back_02
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 256
+    imgHeight: 336
+    width: 256
+    height: 336
+    offx: 0
+    offy: 0
+    origname: icT6K876jD4KcKd.png
+    shape: rect
+    left: 0
+    right: 256
+    top: 0
+    bottom: 336
+    uid: cT6K876jD4KcKd
+    padding: 1
+    isBlank: false
+    source: >-
+      D:\Programy\ct.js.v5.2.1.for.win64\package.nw\bundledAssets\textures\Hack
+      Deck\Back_02.png
+  - type: template
+    baseClass: AnimatedSprite
+    name: Back_02
+    depth: 0
+    texture: cT6K876jD4KcKd
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnStep
+        lib: core
+        code: |-
+          this.move();
+          this.move();
+          this.move();
+          this.move();
+        arguments: {}
+    extends:
+      cgroup: ''
+    lastmod: 1760624876005
+    uid: JMkQTzhpprNKnn
+    behaviors: []
+    extendTypes: ''
+  - type: room
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    gridX: 64
+    gridY: 64
+    diagonalGrid: false
+    disableGrid: false
+    simulate: true
+    width: 1280
+    height: 720
+    restrictCamera: false
+    restrictMaxX: 1280
+    restrictMinX: 0
+    restrictMaxY: 720
+    restrictMinY: 0
+    isUi: false
+    name: Room 2
+    backgroundColor: '#000000'
+    follow: -1
+    backgrounds: []
+    copies:
+      - x: 448
+        'y': 384
+        opacity: 1
+        tint: 16777215
+        scale:
+          x: 1
+          'y': 1
+        rotation: 0
+        uid: JMkQTzhpprNKnn
+        exts: {}
+        customProperties: {}
+        bindings: {}
+    tiles: []
+    extends: {}
+    lastmod: 1760624899569
+    events: []
+    behaviors: []
+    extendTypes: ''
+    uid: WDNjNCqM1248HW
 globalVars: []
 settings:
   authoring:
