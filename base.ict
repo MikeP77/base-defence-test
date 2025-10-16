@@ -1,0 +1,286 @@
+ctjsVersion: 5.2.1
+backups: 3
+language: typescript
+notes: /* empty */
+libs:
+  place:
+    gridX: 1024
+    gridY: 1024
+  pointer: {}
+  keyboard: {}
+  keyboard.polyfill: {}
+  pointer.polyfill: {}
+startroom: -1
+contentTypes: []
+actions: []
+scripts: []
+assets:
+  - lastmod: 1759414891658
+    type: texture
+    name: pointer
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 80
+    imgHeight: 40
+    width: 80
+    height: 40
+    offx: 0
+    offy: 0
+    origname: ignHRFP3bFf8rnz.png
+    shape: rect
+    left: 0
+    right: 80
+    top: 0
+    bottom: 40
+    uid: gnHRFP3bFf8rnz
+    padding: 1
+    isBlank: false
+    source: 'F:\JUPITER 2025\Resources\base defence\pointer.png'
+  - lastmod: 1759414891660
+    type: texture
+    name: icons
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 200
+    imgHeight: 40
+    width: 200
+    height: 40
+    offx: 0
+    offy: 0
+    origname: itMM549624f4MbP.png
+    shape: rect
+    left: 0
+    right: 200
+    top: 0
+    bottom: 40
+    uid: tMM549624f4MbP
+    padding: 1
+    isBlank: false
+    source: 'F:\JUPITER 2025\Resources\base defence\icons.png'
+  - lastmod: 1759414891649
+    type: texture
+    name: background_01
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 540
+    imgHeight: 960
+    width: 540
+    height: 960
+    offx: 0
+    offy: 0
+    origname: iKN1rwT2KFcrB17.png
+    shape: rect
+    left: 0
+    right: 540
+    top: 0
+    bottom: 960
+    uid: KN1rwT2KFcrB17
+    padding: 1
+    isBlank: false
+    source: 'F:\JUPITER 2025\Resources\base defence\background_01.png'
+    tiled: true
+  - type: room
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    gridX: 64
+    gridY: 64
+    diagonalGrid: false
+    disableGrid: false
+    simulate: true
+    width: 960
+    height: 960
+    restrictCamera: false
+    restrictMaxX: 1280
+    restrictMinX: 0
+    restrictMaxY: 720
+    restrictMinY: 0
+    isUi: false
+    name: New Room
+    backgroundColor: '#05151C'
+    follow: -1
+    backgrounds:
+      - depth: -1
+        texture: KN1rwT2KFcrB17
+        shiftX: 0
+        shiftY: 0
+        parallaxX: 1
+        parallaxY: 1
+        movementX: 0
+        movementY: 0
+        scaleX: 1
+        scaleY: 1
+        repeat: no-repeat
+    copies:
+      - x: 448
+        'y': 448
+        opacity: 1
+        tint: 16777215
+        scale:
+          x: 1
+          'y': 1
+        rotation: 0
+        uid: wDcJRF7TTncTf7
+        exts: {}
+        customProperties: {}
+        bindings: {}
+    tiles: []
+    extends: {}
+    lastmod: 1759416016978
+    events: []
+    behaviors: []
+    extendTypes: ''
+    uid: z273NKqFwN5nnp
+  - type: template
+    baseClass: AnimatedSprite
+    name: pointer
+    depth: 0
+    texture: gnHRFP3bFf8rnz
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnStep
+        lib: core
+        code: |+
+          this.move();
+
+          this.x = Math.floor(pointer.x / 40) * 40 - 20
+          this.y = Math.floor(pointer.y / 40) * 40 - 20
+
+
+        arguments: {}
+    extends:
+      cgroup: ''
+    lastmod: 1759415517370
+    uid: wDcJRF7TTncTf7
+    behaviors: []
+    extendTypes: ''
+  - name: Poppins-Regular
+    type: typeface
+    fonts:
+      - weight: '400'
+        italic: false
+        uid: kMKJMFb7PH2bjk
+        origname: Poppins-Regular
+    lastmod: 1759415867763
+    bitmapFont: false
+    bitmapFontSize: 12
+    bitmapFontLineHeight: 18
+    bitmapPrecision: false
+    charsets:
+      - punctuation
+      - basicLatin
+    customCharset: ''
+    uid: jmjMr4Dh18HdQP
+  - type: template
+    baseClass: Text
+    name: punkty
+    depth: 0
+    texture: -1
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnStep
+        lib: core
+        code: this.move();
+        arguments: {}
+    extends:
+      cgroup: ''
+    lastmod: 1759415880094
+    uid: 9f8MGBMQGCdLMp
+    behaviors: []
+    extendTypes: ''
+    defaultText: ''
+    textStyle: -1
+    nineSliceSettings:
+      top: 16
+      left: 16
+      bottom: 16
+      right: 16
+      autoUpdate: false
+    hoverTexture: -1
+    pressedTexture: -1
+    disabledTexture: -1
+    fieldType: text
+    maxTextLength: 0
+globalVars: []
+settings:
+  authoring:
+    author: ''
+    site: ''
+    title: ''
+    version:
+      - 0
+      - 0
+      - 0
+    versionPostfix: ''
+    appId: ''
+  rendering:
+    usePixiLegacy: true
+    transparent: false
+    maxFPS: 60
+    pixelatedrender: true
+    highDensity: true
+    desktopMode: maximized
+    hideCursor: false
+    mobileScreenOrientation: unspecified
+    viewMode: fastScaleInteger
+  export:
+    showErrors: true
+    errorsLink: ''
+    autocloseDesktop: true
+    windows: true
+    linux: true
+    mac: true
+    functionWrap: false
+    codeModifier: none
+    bundleAssetTree: false
+    bundleAssetTypes:
+      texture: true
+      template: true
+      room: true
+      behavior: false
+      typeface: false
+      sound: false
+      style: false
+      tandem: false
+      script: false
+      enum: false
+  branding:
+    accent: '#446adb'
+    invertPreloaderScheme: true
+    icon: -1
+    splashScreen: -1
+    forceSmoothIcons: false
+    forceSmoothSplashScreen: false
+    hideLoadingLogo: false
+    alternativeLogo: false
+    customLoadingText: ''
+  fps: 30
+palette: []
