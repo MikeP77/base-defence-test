@@ -229,6 +229,60 @@ assets:
     disabledTexture: -1
     fieldType: text
     maxTextLength: 0
+  - lastmod: 1760624024683
+    type: texture
+    name: Club_07
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 256
+    imgHeight: 336
+    width: 256
+    height: 336
+    offx: 0
+    offy: 0
+    origname: idc4cdmbKTTgL1t.png
+    shape: rect
+    left: 0
+    right: 256
+    top: 0
+    bottom: 336
+    uid: dc4cdmbKTTgL1t
+    padding: 1
+    isBlank: false
+    source: >-
+      D:\Programy\ct.js.v5.2.1.for.win64\package.nw\bundledAssets\textures\Hack
+      Deck\Club_07.png
+  - type: template
+    baseClass: AnimatedSprite
+    name: Club_07
+    depth: 0
+    texture: dc4cdmbKTTgL1t
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnStep
+        lib: core
+        code: this.move();
+        arguments: {}
+      - eventKey: OnCreate
+        code: console.log("nowy template")
+        arguments: {}
+        lib: core
+    extends:
+      cgroup: ''
+    lastmod: 1760624054753
+    uid: qkTLnghnhqJ6mn
+    behaviors: []
+    extendTypes: ''
 globalVars: []
 settings:
   authoring:
