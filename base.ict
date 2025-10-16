@@ -10,7 +10,7 @@ libs:
   keyboard: {}
   keyboard.polyfill: {}
   pointer.polyfill: {}
-startroom: -1
+startroom: 8dKcPMPMMHFJdg
 contentTypes: []
 actions: []
 scripts: []
@@ -283,6 +283,98 @@ assets:
     uid: qkTLnghnhqJ6mn
     behaviors: []
     extendTypes: ''
+  - lastmod: 1760624694597
+    type: texture
+    name: Placeholder2
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: ibwW3LhL47cFkG7.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: bwW3LhL47cFkG7
+    padding: 1
+    isBlank: false
+  - type: template
+    baseClass: AnimatedSprite
+    name: Placeholder2
+    depth: 0
+    texture: bwW3LhL47cFkG7
+    playAnimationOnStart: false
+    loopAnimation: true
+    animationFPS: 30
+    visible: true
+    events:
+      - eventKey: OnStep
+        lib: core
+        code: |-
+          this.move();
+
+          console.log("placeholder2")
+        arguments: {}
+    extends:
+      cgroup: ''
+    lastmod: 1760624710832
+    uid: tgwJ8mHRJNN1JC
+    behaviors: []
+    extendTypes: ''
+  - type: room
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    gridX: 64
+    gridY: 64
+    diagonalGrid: false
+    disableGrid: false
+    simulate: true
+    width: 1280
+    height: 720
+    restrictCamera: false
+    restrictMaxX: 1280
+    restrictMinX: 0
+    restrictMaxY: 720
+    restrictMinY: 0
+    isUi: false
+    name: Room 2
+    backgroundColor: '#000000'
+    follow: -1
+    backgrounds: []
+    copies:
+      - x: 384
+        'y': 256
+        opacity: 1
+        tint: 16777215
+        scale:
+          x: 1
+          'y': 1
+        rotation: 0
+        uid: tgwJ8mHRJNN1JC
+        exts: {}
+        customProperties: {}
+        bindings: {}
+    tiles: []
+    extends: {}
+    lastmod: 1760624729572
+    events: []
+    behaviors: []
+    extendTypes: ''
+    uid: 8dKcPMPMMHFJdg
 globalVars: []
 settings:
   authoring:
